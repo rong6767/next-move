@@ -131,3 +131,5 @@ The portable build runs Vinext directly without a host `timeout` command. The ma
 This repository distributes sanitized source snapshots of Next Move. Personal job-search records, candidate shortlists, runtime databases, generated previews, local environment files, and credentials are not included. The bundled `lib/seed-jobs.json` is intentionally empty.
 
 The original Sites project identity is omitted from `.openai/hosting.json`; retain its logical storage and MCP declarations and register a separate Site before deployment. The existing development history is reconstructed from the original committed snapshots with the original author and committer metadata. Sanitization changes the commit hashes; these are not byte-for-byte copies of the original commits.
+
+See [source history](docs/source-history.md) for the original snapshot IDs, dates, and reconstruction notes.
