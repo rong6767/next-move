@@ -25,3 +25,21 @@ The three reconstructed historical commits preserve each original author's name,
 - Keep runtime database schema and migration files: these define structure and contain no personal application rows.
 
 English-language features and subsequent work belong in later commits with their actual preparation dates. The original private Sites source repository and its working tree are unchanged by this reconstruction.
+
+## 2026-10-20: bilingual interface and distribution documentation
+
+The English-language work was prepared as three new commits using the actual system author and committer times, without overriding dates:
+
+1. Add persistent English and Chinese locale support: locale provider, stable status and priority labels, Toronto-aware date formatting, server-error translations, layout integration, and an i18n verification script.
+2. Localize the job workspace and company views: language switching, forms, company groups, reminders, board and list views, CSV labels, and responsive controls.
+3. Document bilingual setup and verification: English and Chinese READMEs, verification commands, and these source-history notes.
+
+Verification completed for the matching bilingual Sites source before distribution:
+
+- TypeScript checks, automated i18n checks, and the production build passed.
+- Browser verification confirmed that the language preference survives reload.
+- Saved JD text and existing job content remain unchanged when the interface language changes.
+- CSV exports use English column headings when English is selected.
+- A 390 px mobile viewport showed no horizontal overflow.
+
+These application files are copied into this sanitized mirror; this note records the completed Sites-source validation rather than claiming a separate dependency installation or browser session in the mirror. The distributed seed remains empty, the original Site project ID remains absent, and private runtime data stays excluded.
